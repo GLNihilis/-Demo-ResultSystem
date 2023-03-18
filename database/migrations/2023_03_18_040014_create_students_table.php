@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('student_name');
             $table->string('student_email');
-            $table->enum('student_gender',['Male', 'Female']);
+            $table->enum('student_gender', ['Male', 'Female']);
             $table->string('student_image');
             $table->timestamps();
         });

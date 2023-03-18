@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col col-md-6"><b>Student Data</b></div>
             <div class="col col-md-6">
-            <a href="{{ route('students.create') }}" class="btn btn-success btn-sm float-end">Add</a>
+                <a href="{{ route('students.create') }}" class="btn btn-success btn-sm float-end">Add</a>
             </div>
         </div>
     </div>
