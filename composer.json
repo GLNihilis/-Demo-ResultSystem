@@ -1,0 +1,15 @@
+{
+    "name": "predator/l_lcrud",
+    "autoload": {
+        "psr-4": {
+            "Predator\\LLcrud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Đức Anh",
+            "email": "99268985+GLNihilis@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
