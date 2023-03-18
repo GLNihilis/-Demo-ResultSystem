@@ -1,3 +1,4 @@
+<!-- Tệp này được sử dụng để hiển thị dữ liệu của một sinh viên trên trang web -->
 @extends('master')
 
 @section('content')

@@ -14,9 +14,11 @@ class StudentController extends Controller
      */
     public function index()
     {
+        //
         $data = Student::latest()->paginate(5);
 
         return view('index', compact('data'))->with('i', (request()->input('page', 1) - 1) * 5);
+
     }
 
     /**
@@ -26,6 +28,7 @@ class StudentController extends Controller
      */
     public function create()
     {
+        //
         return view('create');
     }
 
@@ -37,6 +40,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+        //
         $request->validate([
             'student_name'          =>  'required',
             'student_email'         =>  'required|email|unique:students',
@@ -57,6 +61,7 @@ class StudentController extends Controller
         $student->save();
 
         return redirect()->route('students.index')->with('success', 'Student Added successfully.');
+
     }
 
     /**
@@ -67,6 +72,7 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
+        //
         return view('show', compact('student'));
     }
 
@@ -78,6 +84,7 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
+        //
         return view('edit', compact('student'));
     }
 
@@ -90,6 +97,7 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
+        //
         $request->validate([
             'student_name'      =>  'required',
             'student_email'     =>  'required|email',
@@ -128,8 +136,10 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
+        //
         $student->delete();
 
         return redirect()->route('students.index')->with('success', 'Student Data deleted successfully');
+
     }
 }

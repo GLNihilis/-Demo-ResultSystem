@@ -1,3 +1,4 @@
+<!-- Tệp này được sử dụng để tải biểu mẫu Tạo sinh viên trên trang web -->
 @extends('master')
 
 @section('content')

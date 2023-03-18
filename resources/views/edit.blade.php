@@ -1,3 +1,4 @@
+<!-- Tệp này được sử dụng để tải biểu mẫu chỉnh sửa của sinh viên trong trình duyệt. -->
 @extends('master')
 
 @section('content')

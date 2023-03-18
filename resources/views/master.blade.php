@@ -1,3 +1,4 @@
+<!-- Đây là tệp mẫu chính -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

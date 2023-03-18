@@ -1,3 +1,4 @@
+<!-- Tệp sử dụng để hiển thị dữ liệu bảng MySQL trên trang web ở định dạng bảng HTML với liên kết phân trang. -->
 @extends('master')
 
 @section('content')
